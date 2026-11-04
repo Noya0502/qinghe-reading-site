@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img">
+<defs>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer></filter>
+  <linearGradient id="fSky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#2E5C4E"/><stop offset="1" stop-color="#22463B"/>
+</linearGradient>
+</defs>
+
+<rect width="640" height="420" fill="#22463B"/>
+<rect width="640" height="250" fill="url(#fSky)"/>
+<circle cx="500" cy="104" r="62" fill="#C99A3F" opacity=".95"/>
+<circle cx="500" cy="104" r="78" fill="none" stroke="#C99A3F" stroke-width="1" opacity=".4"/>
+<path d="M0 250h640v18H0z" fill="#17332B"/>
+<g stroke="#C99A3F" stroke-width="1" opacity=".35">
+  <path d="M0 286h640"/><path d="M0 302h640"/><path d="M0 318h640"/>
+</g>
+<path d="M258 60L150 330h340L382 60z" fill="#F6F1E7" opacity=".06"/>
+<rect x="96" y="322" width="448" height="62" rx="4" fill="#17332B"/>
+<rect x="96" y="322" width="448" height="5" fill="#C99A3F" opacity=".6"/>
+<rect x="150" y="350" width="340" height="10" fill="#F6F1E7" opacity=".12"/>
+<g fill="#1F2723">
+  <circle cx="252" cy="268" r="17"/><path d="M232 322c0-26 8-44 20-44s20 18 20 44z"/>
+  <circle cx="392" cy="274" r="15"/><path d="M374 322c0-24 7-40 18-40s18 16 18 40z"/>
+</g>
+<g fill="#F6F1E7" opacity=".8">
+  <rect x="238" y="290" width="28" height="20" rx="2"/>
+  <rect x="380" y="294" width="24" height="18" rx="2"/>
+</g>
+<g fill="#F6F1E7" opacity=".22">
+  <circle cx="120" cy="360" r="9"/><circle cx="160" cy="366" r="9"/><circle cx="200" cy="360" r="9"/>
+  <circle cx="440" cy="360" r="9"/><circle cx="480" cy="366" r="9"/><circle cx="520" cy="360" r="9"/>
+</g>
+<g fill="#BF5530" opacity=".9">
+  <circle cx="80" cy="352" r="8"/><circle cx="560" cy="352" r="8"/>
+</g>
+<g stroke="#C99A3F" stroke-width="1.4" opacity=".7">
+  <path d="M70 60v28"/><circle cx="70" cy="96" r="5" fill="#C99A3F" stroke="none"/>
+  <path d="M110 44v34"/><circle cx="110" cy="86" r="5" fill="#C99A3F" stroke="none"/>
+</g>
+<rect width="640" height="420" fill="#1F2723" opacity=".04" filter="url(#grain)"/>
+
+</svg>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="胡国静">
+  <meta name="description" content="青禾·城市阅读生活节主题网站，高级网页设计I 网页元素设计四级项目作品。学号 24003140406，姓名 胡国静，类名前缀 Hgj406。">
+  <!-- 高级网页设计 I · 网页元素设计四级项目 | 学号：24003140406 | 姓名：胡国静 | 类名前缀：Hgj406 -->
+  <!-- 页面为纯静态站点，双击即可离线打开；不依赖任何外部资源。 -->
+  <title>青禾 · 城市阅读生活节 | 2026.11.14—11.22</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="Hgj406-skip" href="#Hgj406-main">跳到主要内容</a>
+
+  <header class="Hgj406-header" data-shot="header">
+    <div class="Hgj406-container Hgj406-header__inner">
+      <a class="Hgj406-brand" href="index.html" aria-label="青禾阅读节首页">
+        <img class="Hgj406-brand__mark" src="assets/logo.svg" alt="" width="36" height="36">
+        <span class="Hgj406-brand__text">
+          <strong>青禾</strong>
+          <small>QINGHE READING FESTIVAL</small>
+        </span>
+      </a>
+
+      <button class="Hgj406-menu" type="button" aria-expanded="false" aria-controls="Hgj406-nav" aria-label="打开导航菜单">
+        <span class="Hgj406-menu__bar"></span>
+        <span class="Hgj406-menu__bar"></span>
+        <span class="Hgj406-menu__bar"></span>
+      </button>
+
+      <nav class="Hgj406-nav" id="Hgj406-nav" aria-label="主导航">
+        <ul class="Hgj406-nav__list">
+          <li><a class="Hgj406-nav__link" href="#programme">活动日程</a></li>
+          <li><a class="Hgj406-nav__link" href="#data">阅读数据</a></li>
+          <li><a class="Hgj406-nav__link" href="#theme">主题展</a></li>
+          <li><a class="Hgj406-nav__link" href="#ranking">借阅榜</a></li>
+          <li><a class="Hgj406-nav__link" href="#tracks">活动分类</a></li>
+        </ul>
+        <a class="Hgj406-button Hgj406-button--small" href="#signup">立即报名</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="Hgj406-main">
+    <!-- 首屏 / Hero -->
+    <section class="Hgj406-hero" data-shot="hero" aria-labelledby="Hgj406-hero-title">
+      <div class="Hgj406-container Hgj406-hero__inner">
+        <div class="Hgj406-hero__content">
+          <p class="Hgj406-eyebrow">2026.11.14 — 11.22 · 大连 · 城市阅读生活节</p>
+          <h1 class="Hgj406-hero__title" id="Hgj406-hero-title">
+            把城市，<br><em>读成</em>一本书
+          </h1>
+          <p class="Hgj406-hero__lead">
+            九天时间，二十四个阅读现场。我们在海边搭起书架，在街角点亮灯，
+            把读者、作者与一座城市的故事，装订成可以走进的篇章。
+          </p>
+          <div class="Hgj406-hero__actions">
+            <a class="Hgj406-button" href="#programme">查看活动日程</a>
+            <a class="Hgj406-button Hgj406-button--ghost" href="#signup">预约席位</a>
+          </div>
+          <dl class="Hgj406-hero__meta">
+            <div>
+              <dt>9 天</dt>
+              <dd>持续开放</dd>
+            </div>
+            <div>
+              <dt>24 场</dt>
+              <dd>主题阅读活动</dd>
+            </div>
+            <div>
+              <dt>6 处</dt>
+              <dd>城市阅读空间</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="Hgj406-hero__poster">
+          <img src="assets/poster-hero.svg" alt="青禾阅读节主视觉：暖色天空下堆叠的书本与一枚落日" width="760" height="900">
+          <figcaption>主视觉 / 书页与落日</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 元素一：上图下文（活动卡片） -->
+    <section class="Hgj406-section" id="programme" data-shot="programme" aria-labelledby="Hgj406-programme-title">
+      <div class="Hgj406-container">
+        <header class="Hgj406-section__head">
+          <div>
+            <p class="Hgj406-eyebrow">01 / PROGRAMME</p>
+            <h2 class="Hgj406-section__title" id="Hgj406-programme-title">活动日程</h2>
+          </div>
+          <p class="Hgj406-section__desc">
+            三天主场、六处空间。每张卡片都由「图片在上、文字在下」的结构组成，
+            用 CSS Grid 完成等宽排列，窄屏自动降为单列。
+          </p>
+        </header>
+
+        <div class="Hgj406-cards">
+          <article class="Hgj406-card">
+            <figure class="Hgj406-card__media">
+              <img src="assets/event-forum.svg" alt="开幕论坛舞台插画：海面、讲台与灯光" width="640" height="420" loading="lazy">
+              <span class="Hgj406-tag">开幕论坛</span>
+            </figure>
+            <div class="Hgj406-card__body">
+              <p class="Hgj406-card__meta">11.14 周六 · 14:00</p>
+              <h3 class="Hgj406-card__title">在海边，朗读一座城</h3>
+              <p class="Hgj406-card__text">
+                四位城市写作者与两位声音艺术家，用朗读和交谈打开本届阅读节的序幕。
+              </p>
+              <p class="Hgj406-card__place">主会场 · 星海广场阅读棚</p>
+            </div>
+          </article>
+
+          <article class="Hgj406-card">
+            <figure class="Hgj406-card__media">
+              <img src="assets/event-market.svg" alt="旧书交换市集插画：成排书摊与遮阳棚" width="640" height="420" loading="lazy">
+              <span class="Hgj406-tag Hgj406-tag--green">书市</span>
+            </figure>
+            <div class="Hgj406-card__body">
+              <p class="Hgj406-card__meta">11.15 — 11.16 · 10:00</p>
+              <h3 class="Hgj406-card__title">旧书交换市集</h3>
+              <p class="Hgj406-card__text">
+                带一本读过的好书来，换一本陌生人的珍藏。现场设有修复摊位与手写书签工作台。
+              </p>
+              <p class="Hgj406-card__place">城市书房 · 中山广场</p>
+            </div>
+          </article>
+
+          <article class="Hgj406-card">
+            <figure class="Hgj406-card__media">
+              <img src="assets/event-night.svg" alt="深夜共读插画：夜色中的台灯与翻开的书" width="640" height="420" loading="lazy">
+              <span class="Hgj406-tag Hgj406-tag--gold">夜读</span>
+            </figure>
+            <div class="Hgj406-card__body">
+              <p class="Hgj406-card__meta">11.20 周五 · 20:00</p>
+              <h3 class="Hgj406-card__title">深夜共读计划</h3>
+              <p class="Hgj406-card__text">
+                关掉手机，只带一本书。两小时的安静共读，结束后交换一句最想留下的话。
+              </p>
+              <p class="Hgj406-card__place">24 小时书房 · 黑石礁</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 元素二：左图右文（图表 + 说明） -->
+    <section class="Hgj406-section Hgj406-section--tint" id="data" data-shot="data" aria-labelledby="Hgj406-data-title">
+      <div class="Hgj406-container">
+        <div class="Hgj406-feature">
+          <figure class="Hgj406-feature__media">
+            <img src="assets/chart-reading.svg" alt="柱状图：2021 至 2026 年城市居民人均年阅读时长由 6.2 小时增长至 9.8 小时" width="760" height="560" loading="lazy">
+            <figcaption>数据来源：市图书馆 2026 年度阅读调查报告（示意数据）</figcaption>
+          </figure>
+
+          <div class="Hgj406-feature__body">
+            <p class="Hgj406-eyebrow">02 / READING DATA</p>
+            <h2 class="Hgj406-section__title" id="Hgj406-data-title">每天多读 12 分钟，<br>会发生什么？</h2>
+            <p>
+              过去五年，城市居民的人均年阅读时长从 6.2 小时增长到 9.8 小时。
+              我们把这条缓慢上扬的曲线，做成了一张可以读的图：左侧是数据，右侧是它背后的生活。
+            </p>
+            <p>
+              阅读节期间，所有阅读空间将延长开放时间，并提供「十二分钟阅读卡」——
+              刚好够读完一首长诗，或一个短篇的开头。
+            </p>
+            <ul class="Hgj406-stats">
+              <li>
+                <strong>68<small>%</small></strong>
+                <span>受访者保持每日阅读习惯</span>
+              </li>
+              <li>
+                <strong>21.4<small>本</small></strong>
+                <span>人均年阅读纸质书数量</span>
+              </li>
+              <li>
+                <strong>12<small>min</small></strong>
+                <span>每天建议的最小阅读时长</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 元素三：一左一右（主题展双栏） -->
+    <section class="Hgj406-section" id="theme" data-shot="theme" aria-labelledby="Hgj406-theme-title">
+      <div class="Hgj406-container">
+        <header class="Hgj406-section__head Hgj406-section__head--center">
+          <div>
+            <p class="Hgj406-eyebrow">03 / THEME EXHIBITION</p>
+            <h2 class="Hgj406-section__title" id="Hgj406-theme-title">书页里的城市</h2>
+          </div>
+          <p class="Hgj406-section__desc">
+            左与右，是两种观看城市的方式：一边是图像与物件，一边是文字与声音。
+          </p>
+        </header>
+
+        <div class="Hgj406-split">
+          <figure class="Hgj406-split__panel Hgj406-split__panel--media">
+            <img src="assets/theme-exhibition.svg" alt="主题展现场插画：悬挂的书页、展台与观展人群" width="800" height="900" loading="lazy">
+            <figcaption>
+              <span class="Hgj406-eyebrow">展区 A</span>
+              <strong>城市切片 · 影像与物件</strong>
+            </figcaption>
+          </figure>
+
+          <div class="Hgj406-split__panel Hgj406-split__panel--text">
+            <p class="Hgj406-eyebrow">展区 B</p>
+            <h3>一条街的十二种读法</h3>
+            <p>
+              我们邀请了十二位居民，用一本书、一段声音或一件旧物，讲述他们与同一条街道的关系。
+              这些私人化的注脚，被重新编排成一条可以慢慢走完的阅读动线。
+            </p>
+            <ul class="Hgj406-highlights">
+              <li>12 组居民口述与私人藏书</li>
+              <li>6 米长的折页手稿墙</li>
+              <li>每晚 19:00 的现场朗读</li>
+            </ul>
+            <a class="Hgj406-link" href="#signup">预约主题展导览 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 列表：热门借阅榜 -->
+    <section class="Hgj406-section Hgj406-section--dark" id="ranking" data-shot="ranking" aria-labelledby="Hgj406-ranking-title">
+      <div class="Hgj406-container">
+        <header class="Hgj406-section__head">
+          <div>
+            <p class="Hgj406-eyebrow">04 / MOST BORROWED</p>
+            <h2 class="Hgj406-section__title" id="Hgj406-ranking-title">本届借阅榜</h2>
+          </div>
+          <p class="Hgj406-section__desc">
+            由六处阅读空间的借阅记录汇总而成，榜单每日 18:00 更新。
+          </p>
+        </header>
+
+        <ol class="Hgj406-rank">
+          <li class="Hgj406-rank__item">
+            <span class="Hgj406-rank__no">01</span>
+            <img class="Hgj406-rank__cover" src="assets/book-1.svg" alt="《海边的房间》封面" width="72" height="96" loading="lazy">
+            <div class="Hgj406-rank__info">
+              <h3>海边的房间</h3>
+              <p>林白 · 短篇小说集</p>
+            </div>
+            <span class="Hgj406-rank__tag">文学</span>
+            <span class="Hgj406-rank__count">借阅 1,284 次</span>
+          </li>
+          <li class="Hgj406-rank__item">
+            <span class="Hgj406-rank__no">02</span>
+            <img class="Hgj406-rank__cover" src="assets/book-2.svg" alt="《城市观察笔记》封面" width="72" height="96" loading="lazy">
+            <div class="Hgj406-rank__info">
+              <h3>城市观察笔记</h3>
+              <p>周恺 · 非虚构</p>
+            </div>
+            <span class="Hgj406-rank__tag">社科</span>
+            <span class="Hgj406-rank__count">借阅 1,106 次</span>
+          </li>
+          <li class="Hgj406-rank__item">
+            <span class="Hgj406-rank__no">03</span>
+            <img class="Hgj406-rank__cover" src="assets/book-3.svg" alt="《慢读十二分钟》封面" width="72" height="96" loading="lazy">
+            <div class="Hgj406-rank__info">
+              <h3>慢读十二分钟</h3>
+              <p>苏禾 · 阅读随笔</p>
+            </div>
+            <span class="Hgj406-rank__tag">随笔</span>
+            <span class="Hgj406-rank__count">借阅 968 次</span>
+          </li>
+          <li class="Hgj406-rank__item">
+            <span class="Hgj406-rank__no">04</span>
+            <img class="Hgj406-rank__cover" src="assets/book-4.svg" alt="《给孩子的城市史》封面" width="72" height="96" loading="lazy">
+            <div class="Hgj406-rank__info">
+              <h3>给孩子的城市史</h3>
+              <p>陈雨 · 亲子共读</p>
+            </div>
+            <span class="Hgj406-rank__tag">亲子</span>
+            <span class="Hgj406-rank__count">借阅 812 次</span>
+          </li>
+          <li class="Hgj406-rank__item">
+            <span class="Hgj406-rank__no">05</span>
+            <img class="Hgj406-rank__cover" src="assets/book-5.svg" alt="《书页里的植物园》封面" width="72" height="96" loading="lazy">
+            <div class="Hgj406-rank__info">
+              <h3>书页里的植物园</h3>
+              <p>沈青 · 自然笔记</p>
+            </div>
+            <span class="Hgj406-rank__tag">自然</span>
+            <span class="Hgj406-rank__count">借阅 705 次</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Tab：活动分类 -->
+    <section class="Hgj406-section" id="tracks" data-shot="tracks" aria-labelledby="Hgj406-tracks-title">
+      <div class="Hgj406-container">
+        <header class="Hgj406-section__head">
+          <div>
+            <p class="Hgj406-eyebrow">05 / TRACKS</p>
+            <h2 class="Hgj406-section__title" id="Hgj406-tracks-title">按兴趣，选一条阅读路线</h2>
+          </div>
+          <p class="Hgj406-section__desc">
+            三个分类以选项卡的形式呈现。选项卡切换为补充的交互效果，静态状态下同样保留完整的图文内容。
+          </p>
+        </header>
+
+        <div class="Hgj406-tabs">
+          <div class="Hgj406-tabs__bar" role="tablist" aria-label="活动分类">
+            <button class="Hgj406-tabs__tab Hgj406-is-active" type="button" role="tab" id="Hgj406-tab-salon"
+              aria-selected="true" aria-controls="Hgj406-panel-salon" tabindex="0">沙龙对谈</button>
+            <button class="Hgj406-tabs__tab" type="button" role="tab" id="Hgj406-tab-workshop"
+              aria-selected="false" aria-controls="Hgj406-panel-workshop" tabindex="-1">手作工坊</button>
+            <button class="Hgj406-tabs__tab" type="button" role="tab" id="Hgj406-tab-family"
+              aria-selected="false" aria-controls="Hgj406-panel-family" tabindex="-1">亲子共读</button>
+          </div>
+
+          <div class="Hgj406-tabs__panel Hgj406-is-active" id="Hgj406-panel-salon" role="tabpanel" aria-labelledby="Hgj406-tab-salon">
+            <figure class="Hgj406-tabs__media">
+              <img src="assets/track-salon.svg" alt="沙龙现场插画：两位讲者与围坐的听众" width="720" height="480" loading="lazy">
+            </figure>
+            <div class="Hgj406-tabs__body">
+              <p class="Hgj406-card__meta">每日 15:00 · 主会场</p>
+              <h3>在不确定的时代，如何书写确定的事</h3>
+              <p>
+                六场对谈，围绕城市、写作与日常经验展开。每场结束后保留二十分钟的自由提问，
+                观众可以带着自己的问题来到现场。
+              </p>
+              <p class="Hgj406-tabs__note">嘉宾：李静、周恺、苏禾等</p>
+            </div>
+          </div>
+
+          <div class="Hgj406-tabs__panel" id="Hgj406-panel-workshop" role="tabpanel" aria-labelledby="Hgj406-tab-workshop" hidden>
+            <figure class="Hgj406-tabs__media">
+              <img src="assets/track-workshop.svg" alt="手作工坊插画：桌面上的纸张、装订线与工具" width="720" height="480" loading="lazy">
+            </figure>
+            <div class="Hgj406-tabs__body">
+              <p class="Hgj406-card__meta">每日 10:30 · 城市书房</p>
+              <h3>做一本自己的小书</h3>
+              <p>
+                从折页、缝线到封面装帧，两小时完成一本八页的手工书。
+                材料由主办方提供，适合零基础参与者。
+              </p>
+              <p class="Hgj406-tabs__note">每场限 20 人 · 需提前预约</p>
+            </div>
+          </div>
+
+          <div class="Hgj406-tabs__panel" id="Hgj406-panel-family" role="tabpanel" aria-labelledby="Hgj406-tab-family" hidden>
+            <figure class="Hgj406-tabs__media">
+              <img src="assets/track-family.svg" alt="亲子共读插画：大人与孩子共同阅读一本大书" width="720" height="480" loading="lazy">
+            </figure>
+            <div class="Hgj406-tabs__body">
+              <p class="Hgj406-card__meta">周末 10:00 · 少儿阅读区</p>
+              <h3>把故事讲给城市听</h3>
+              <p>
+                面向 4—10 岁孩子的绘本共读与声音采集。孩子们录下的故事，将在闭幕式上播放。
+              </p>
+              <p class="Hgj406-tabs__note">需家长陪同 · 免费参与</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 补充元素：表单 -->
+    <section class="Hgj406-section Hgj406-section--tint" id="signup" data-shot="signup" aria-labelledby="Hgj406-signup-title">
+      <div class="Hgj406-container">
+        <div class="Hgj406-signup">
+          <div class="Hgj406-signup__intro">
+            <p class="Hgj406-eyebrow">06 / RESERVATION</p>
+            <h2 class="Hgj406-section__title" id="Hgj406-signup-title">留一个席位，<br>留给下一次阅读</h2>
+            <p>
+              填写信息即可预约开幕论坛或手作工坊。报名结果将在 24 小时内以短信通知，
+              现场凭手机号签到入场。
+            </p>
+            <p class="Hgj406-signup__note">
+              * 本表单为课程练习所用，信息仅在本地页面校验，不会上传至任何服务器。
+            </p>
+          </div>
+
+          <form class="Hgj406-form" action="#" method="post" novalidate>
+            <div class="Hgj406-form__row">
+              <label class="Hgj406-form__label" for="Hgj406-name">姓名</label>
+              <input class="Hgj406-form__input" id="Hgj406-name" name="name" type="text" autocomplete="name" placeholder="请输入您的姓名" required>
+            </div>
+
+            <div class="Hgj406-form__row">
+              <label class="Hgj406-form__label" for="Hgj406-phone">手机号</label>
+              <input class="Hgj406-form__input" id="Hgj406-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="11 位手机号码" pattern="1[3-9]\d{9}" required>
+            </div>
+
+            <div class="Hgj406-form__row">
+              <label class="Hgj406-form__label" for="Hgj406-session">参与场次</label>
+              <select class="Hgj406-form__select" id="Hgj406-session" name="session" required>
+                <option value="">请选择场次</option>
+                <option value="forum">开幕论坛 · 11.14</option>
+                <option value="market">旧书市集 · 11.15</option>
+                <option value="workshop">手作工坊 · 11.16</option>
+                <option value="night">深夜共读 · 11.20</option>
+              </select>
+            </div>
+
+            <fieldset class="Hgj406-form__group">
+              <legend class="Hgj406-form__label">参与方式</legend>
+              <label class="Hgj406-radio">
+                <input type="radio" name="mode" value="offline" checked>
+                <span>线下到场</span>
+              </label>
+              <label class="Hgj406-radio">
+                <input type="radio" name="mode" value="online">
+                <span>线上直播</span>
+              </label>
+            </fieldset>
+
+            <label class="Hgj406-check">
+              <input type="checkbox" name="agree" required>
+              <span>我已阅读并同意活动须知，愿意接收活动提醒。</span>
+            </label>
+
+            <button class="Hgj406-button Hgj406-form__submit" type="submit">提交预约</button>
+            <p class="Hgj406-form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="Hgj406-footer">
+    <div class="Hgj406-container Hgj406-footer__inner">
+      <div class="Hgj406-footer__brand">
+        <a class="Hgj406-brand Hgj406-brand--footer" href="index.html">
+          <img class="Hgj406-brand__mark" src="assets/logo.svg" alt="" width="36" height="36">
+          <span class="Hgj406-brand__text">
+            <strong>青禾</strong>
+            <small>QINGHE READING FESTIVAL</small>
+          </span>
+        </a>
+        <p>把城市读成一本书。<br>2026 城市阅读生活节 · 大连</p>
+      </div>
+
+      <nav class="Hgj406-footer__nav" aria-label="页脚导航">
+        <h2 class="Hgj406-footer__title">快速前往</h2>
+        <ul>
+          <li><a href="#programme">活动日程</a></li>
+          <li><a href="#data">阅读数据</a></li>
+          <li><a href="#theme">主题展</a></li>
+          <li><a href="#ranking">借阅榜</a></li>
+        </ul>
+      </nav>
+
+      <div class="Hgj406-footer__contact">
+        <h2 class="Hgj406-footer__title">联系我们</h2>
+        <p>邮箱：hello@qinghe-festival.example</p>
+        <p>电话：0411-8888 0000</p>
+        <p>地址：大连市中山区城市书房</p>
+      </div>
+    </div>
+
+    <div class="Hgj406-container Hgj406-footer__bottom">
+      <p>© <span data-year>2026</span> 青禾阅读节 · 高级网页设计I 课程练习作品</p>
+      <p>HTML / CSS / JavaScript · 语义化 · 响应式</p>
+    </div>
+  </footer>
+</body>
+</html>

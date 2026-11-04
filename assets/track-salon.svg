@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img">
+<defs>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer></filter>
+  
+</defs>
+
+<rect width="720" height="480" fill="#EFE2CB"/>
+<circle cx="120" cy="96" r="64" fill="#C99A3F" opacity=".45"/>
+<rect x="60" y="300" width="600" height="180" fill="#DCC9A9"/>
+<rect x="86" y="250" width="212" height="120" rx="6" fill="#2E5C4E" opacity=".85"/>
+<rect x="330" y="250" width="212" height="120" rx="6" fill="#BF5530" opacity=".85"/>
+<g fill="#FFFDF8">
+  <rect x="110" y="270" width="142" height="8" rx="3"/><rect x="110" y="288" width="120" height="8" rx="3"/>
+  <rect x="360" y="270" width="130" height="8" rx="3"/><rect x="360" y="288" width="150" height="8" rx="3"/>
+</g>
+<g fill="#1F2723">
+  <circle cx="196" cy="196" r="18"/><path d="M176 250c0-30 9-48 20-48s20 18 20 48z"/>
+  <circle cx="436" cy="204" r="16"/><path d="M418 250c0-28 8-44 18-44s18 16 18 44z"/>
+</g>
+<g fill="#22463B" opacity=".9">
+  <circle cx="140" cy="370" r="14"/><circle cx="220" cy="386" r="14"/><circle cx="300" cy="374" r="14"/>
+  <circle cx="380" cy="390" r="14"/><circle cx="460" cy="374" r="14"/><circle cx="540" cy="388" r="14"/>
+</g>
+<g stroke="#C99A3F" stroke-width="1.2" opacity=".7"><path d="M0 60h720"/></g>
+<g fill="#BF5530" opacity=".8">
+  <circle cx="600" cy="120" r="8"/><circle cx="636" cy="96" r="5"/>
+</g>
+<rect width="720" height="480" fill="#1F2723" opacity=".03" filter="url(#grain)"/>
+
+</svg>

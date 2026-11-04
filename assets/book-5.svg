@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="192" viewBox="0 0 144 192" role="img">
+<defs>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer></filter>
+  
+</defs>
+<rect width="144" height="192" fill="#6B7A4A"/>
+<rect x="0" y="0" width="9" height="192" fill="#1F2723" opacity=".22"/>
+<rect x="16" y="14" width="112" height="164" fill="none" stroke="#F6F1E7" stroke-width=".8" opacity=".45"/>
+<text x="22" y="42" font-family='"Songti SC", "SimSun", serif' font-size="17" font-weight="700" fill="#F6F1E7">书页里的植</text>
+<text x="22" y="63" font-family='"Songti SC", "SimSun", serif' font-size="17" font-weight="700" fill="#F6F1E7">物园</text>
+
+<g stroke="#F6F1E7" stroke-width="1.6" opacity=".9">
+  <path d="M72 148V92"/><path d="M72 112c-18-2-28-12-30-26 16 2 27 11 30 26"/>
+  <path d="M72 126c18-2 28-12 30-26-16 2-27 11-30 26"/>
+  <path d="M72 100c-12-6-16-18-14-30 12 6 17 18 14 30"/>
+</g><circle cx="100" cy="82" r="9" fill="#C99A3F" opacity=".85"/>
+<text x="22" y="164" font-family='"Microsoft YaHei", "PingFang SC", sans-serif' font-size="9" letter-spacing="1" fill="#F6F1E7" opacity=".75">沈青 · 自然笔记</text>
+<rect width="144" height="192" fill="#1F2723" opacity=".02" filter="url(#grain)"/>
+</svg>
